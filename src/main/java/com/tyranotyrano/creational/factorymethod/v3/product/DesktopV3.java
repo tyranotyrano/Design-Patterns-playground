@@ -9,6 +9,6 @@ public class DesktopV3 implements ComputerV3 {
 
     @Override
     public int getPrice() {
-        return 1_00_000;
+        return 100_000;
     }
 }
