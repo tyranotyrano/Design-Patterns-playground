@@ -5,6 +5,6 @@ public interface ComputerV2 {
     int getPrice();
 
     default String getInfo() {
-        return "Model : " + getModelName() + ", Price : " + getPrice();
+        return "Computer v2 -> Model : " + getModelName() + ", Price : " + getPrice();
     }
 }
