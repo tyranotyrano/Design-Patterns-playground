@@ -5,7 +5,7 @@ import com.tyranotyrano.creational.factorymethod.v1.creator.DesktopCreator;
 import com.tyranotyrano.creational.factorymethod.v1.creator.NotebookCreator;
 import com.tyranotyrano.creational.factorymethod.v1.product.Computer;
 
-public class FactoryMethodMain {
+public class FactoryMethodV1Main {
 
     public static void main(String[] args) {
         // 1. 데스크탑
