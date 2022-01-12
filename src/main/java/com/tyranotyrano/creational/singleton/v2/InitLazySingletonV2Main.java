@@ -1,11 +1,11 @@
-package com.tyranotyrano.creational.singleton.v1;
+package com.tyranotyrano.creational.singleton.v2;
 
-public class SingletonV1Main {
+public class InitLazySingletonV2Main {
 
     public static void main(String[] args) {
         // Singleton
-        EarlySingleton firstInstance = EarlySingleton.getInstance();
-        EarlySingleton secondInstance = EarlySingleton.getInstance();
+        InitLazySingleton firstInstance = InitLazySingleton.getInstance();
+        InitLazySingleton secondInstance = InitLazySingleton.getInstance();
 
         System.out.println(firstInstance);
         System.out.println(secondInstance);
