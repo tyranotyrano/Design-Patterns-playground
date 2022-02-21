@@ -15,6 +15,6 @@ public class Member implements Observer {
 
     @Override
     public void receive(String message) {
-        System.out.println(message);
+        System.out.println("[" + this.name + "-수신] " + message);
     }
 }

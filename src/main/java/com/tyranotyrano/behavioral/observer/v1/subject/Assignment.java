@@ -46,11 +46,11 @@ public class Assignment implements Subject {
 
     public void changeGoal(String goal) {
         this.goal = goal;
-        notifyObserver("[목표] 목표가 " + this.goal + " 로 변경되었습니다.");
+        notifyObserver("목표가 " + this.goal + " 로 변경되었습니다.");
     }
 
     public void changePlan(String plan) {
         this.plan = plan;
-        notifyObserver("[계획] 계획이 " + this.plan + " 로 변경되었습니다.");
+        notifyObserver("계획이 " + this.plan + " 로 변경되었습니다.");
     }
 }
