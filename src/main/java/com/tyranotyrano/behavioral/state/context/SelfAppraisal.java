@@ -16,7 +16,11 @@ public class SelfAppraisal {
     }
 
     public void proceed() {
-        this.appraisalState = this.appraisalState.completeStep();
+        this.appraisalState.completeStep(this);
+    }
+
+    public void changeState(AppraisalState appraisalState) {
+        this.appraisalState = appraisalState;
         this.appraisalState.printCurrentState();
     }
 }

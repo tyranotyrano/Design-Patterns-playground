@@ -1,10 +1,12 @@
 package com.tyranotyrano.behavioral.state.state;
 
+import com.tyranotyrano.behavioral.state.context.SelfAppraisal;
+
 public class AppraisalStart implements AppraisalState {
 
     @Override
-    public AppraisalState completeStep() {
-        return new AppraisalDone();
+    public void completeStep(SelfAppraisal selfAppraisal) {
+        selfAppraisal.changeState(new AppraisalDone());
     }
 
     @Override

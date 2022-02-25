@@ -1,9 +1,11 @@
 package com.tyranotyrano.behavioral.state.state;
 
+import com.tyranotyrano.behavioral.state.context.SelfAppraisal;
+
 public class AppraisalDone implements AppraisalState {
 
     @Override
-    public AppraisalState completeStep() {
+    public void completeStep(SelfAppraisal selfAppraisal) {
         throw new RuntimeException("완료된 평가");
     }
 
