@@ -2,18 +2,18 @@ package com.tyranotyrano.behavioral.visitor.element;
 
 import com.tyranotyrano.behavioral.visitor.visitor.Visitor;
 
-public class EmailNotification implements Notification {
-    private String sender;
+public class NoticeNotification implements Notification {
+    private String writer;
     private String contents;
 
-    public EmailNotification(String sender, String contents) {
-        this.sender = sender;
+    public NoticeNotification(String writer, String contents) {
+        this.writer = writer;
         this.contents = contents;
     }
 
     @Override
     public String getType() {
-        return "EMAIL";
+        return "NOTICE";
     }
 
     @Override
@@ -21,8 +21,8 @@ public class EmailNotification implements Notification {
         visitor.visit(this);
     }
 
-    public String getSender() {
-        return sender;
+    public String getWriter() {
+        return writer;
     }
 
     public String getContents() {
